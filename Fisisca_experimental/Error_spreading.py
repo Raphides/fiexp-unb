@@ -30,11 +30,4 @@ class ErrorSpreading:
         self.value_error *= constant * pow(abs(self.value), (constant - 1))
         self.value **= constant
         return self.check()
-
-
-res = ErrorSpreading(20, 0.3)
-
-res.pow_by_constant(3)
-res.multiplication(0.00379, 0.00005)
-
-print(res.check())
+    
